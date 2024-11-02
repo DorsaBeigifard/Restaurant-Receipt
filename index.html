@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Restaurant Receipt</title>
   </head>
-  <body class="d-flex d-center d-middle">
+  <body class="d-flex f-center f-middle">
     <div class="reciept-panel">
       <div class="container">
-        <header class="header d-flex d-center">
+        <header class="header d-flex f-center">
           <img src="assets/images/logo.png" alt="Logo" class="logo" />
         </header>
         <table class="reciept-table">
@@ -17,16 +17,17 @@
             <tr>
               <th>Item</th>
               <th>Quantity</th>
-              <th>Price</th>
+              <th>Price per Item</th>
+              <th>Total Price</th>
             </tr>
           </thead>
           <tbody id="receipt-body">
             <!-- Items -->
           </tbody>
         </table>
-        <div class="total-price">
+        <div class="total-price d-flex f-space-between ">
           <span>Total:</span>
-          <span id="total-price">0 IRR</span>
+          <span id="total">0 IRR</span>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@
 /* Root */
 :root {
   --primary-color: #d74c2a;
-  --spacing: 1rem;
+  --spacing: 2.5rem;
 }
 /* -- */
 
@@ -51,20 +51,24 @@ body {
   display: flex;
 }
 
-.d-center {
+.f-center {
   justify-content: center;
 }
 
-.d-middle {
+.f-middle {
   align-items: center;
+}
+
+.f-space-between{
+    justify-content: space-between;
 }
 /* -- */
 
 /* Main styles */
 .reciept-panel {
   background: white;
-  width: 50rem;
-  height: 70rem;
+  width: 70rem;
+  height: auto;
 }
 
 .header {
@@ -75,17 +79,27 @@ body {
   width: 15rem;
 }
 
+.total-price {
+  /* text-align: center; */
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: calc(var(--spacing) * 2) 0;
+}
+
 /* Table Style */
 .reciept-table {
   width: 100%;
-  /* height: auto; */
   border-collapse: collapse;
-  margin-bottom: calc(var(--spacing) * 2);
 }
 
 .reciept-table th,
-.reciept-table tr {
+.reciept-table td {
   padding: var(--spacing) 0;
   border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.reciept-table td:first-child {
+  text-align: left;
 }
 /* -- */
