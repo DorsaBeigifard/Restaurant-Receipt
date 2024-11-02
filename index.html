@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Restaurant Receipt</title>
   </head>
-  <body>
+  <body class="d-flex d-center d-middle">
+    <div class="reciept-panel">
+      <div class="container">
+        <header class="header d-flex d-center">
+          <img src="assets/images/logo.png" alt="Logo" class="logo" />
+        </header>
+        <table class="reciept-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="receipt-body">
+            <!-- Items -->
+          </tbody>
+        </table>
+        <div class="total-price">
+          <span>Total:</span>
+          <span id="total-price">0 IRR</span>
+        </div>
+      </div>
+    </div>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>

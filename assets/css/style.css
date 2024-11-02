@@ -1,0 +1,91 @@
+/* Reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* -- */
+
+/* Root */
+:root {
+  --primary-color: #d74c2a;
+  --spacing: 1rem;
+}
+/* -- */
+
+/* Typography  */
+@font-face {
+  font-family: "PT Mono";
+  src: url(../fonts/PTMono-Regular.ttf) format("ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "PT Mono";
+  font-size: 1.6rem;
+  background-color: #faebe7;
+  height: 100vh;
+}
+
+/* -- */
+
+/* Components, General Classes */
+.reciept-panel {
+  border: 1px solid rgb(228, 227, 227);
+  border-radius: 24px;
+  box-shadow: 0px 0px 18px -10px rgba(0, 0, 0, 0.35);
+}
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-center {
+  justify-content: center;
+}
+
+.d-middle {
+  align-items: center;
+}
+/* -- */
+
+/* Main styles */
+.reciept-panel {
+  background: white;
+  width: 50rem;
+  height: 70rem;
+}
+
+.header {
+  padding-bottom: 2rem;
+}
+
+.logo {
+  width: 15rem;
+}
+
+/* Table Style */
+.reciept-table {
+  width: 100%;
+  /* height: auto; */
+  border-collapse: collapse;
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.reciept-table th,
+.reciept-table tr {
+  padding: var(--spacing) 0;
+  border-bottom: 1px solid #ddd;
+}
+/* -- */
